@@ -1,9 +1,11 @@
-package ro.csie.cts.g1098.hw1;
+package ro.csie.cts.g1098.hw1.stage1;
 
-public class Account {
+public class AccountStage1 {
 	public double loan_value, rate;	
 	public int daysActive, account_Type;
 	public static final int	STANDARD=0,BUDGET=1,PREMIUM=2,SUPER_PREMIUM=3;
+	public static final float BROKER_FEE = 0.125f;
+	public static final int YEAR_DAYS = 365;
 	
 	public double loan() {
 		System.out.println("The loan value is " + this.loan_value);
@@ -34,25 +36,23 @@ public class Account {
 	}
 	
 	public void print() {
-		int vb = 10;
 		System.out.println("This is an account");
 	}
 
-	public static double calculate(Account[] accounts)
+	public static double calculate(AccountStage1[] accounts)
 	{
 		double totalFee=0.0;
-		Account	account;
-		int temp = 365;
+		AccountStage1 account;
 		for	(int i=0;i<accounts.length;i++)	{
 		account=accounts[i];
-		if(account.account_Type==Account.PREMIUM||account.account_Type==Account.SUPER_PREMIUM)	
-			totalFee+=.0125	* (	//	1.25%	broker's	fee
-					account.loan_value*Math.pow(account.rate,(account.daysActive/365)) - account.loan_value);	//	interest-principal
+		if(account.account_Type==AccountStage1.PREMIUM||account.account_Type==AccountStage1.SUPER_PREMIUM)	
+			totalFee+=BROKER_FEE	* (	//	1.25%	broker's	fee
+					account.loan_value*Math.pow(account.rate,(account.daysActive/YEAR_DAYS)) - account.loan_value);	//	interest-principal
 		}
 		return totalFee;
 	}
 
-	public Account(double value, double rate, int account_Type) throws Exception {
+	public AccountStage1(double value, double rate, int account_Type) throws Exception {
 		if(value<0)
 			throw new Exception();
 		else
