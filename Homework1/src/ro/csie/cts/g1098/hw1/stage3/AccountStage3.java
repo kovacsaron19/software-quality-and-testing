@@ -7,13 +7,11 @@ public class AccountStage3 {
 	public static final float BROKER_FEE = 0.125f;
 	public static final int YEAR_DAYS = 365;
 	
-	public double loan() {
-		System.out.println("The loan value is " + this.loan_value);
-		return loan_value;
+	public double getLoan() {
+		return this.loan_value;
 	}
 	
 	public double getRate() {
-		System.out.println("The rate is "+rate);
 		return this.rate;
 	}
 	
@@ -31,14 +29,11 @@ public class AccountStage3 {
 		}
 	}
 	
-	public String to_string() {
-		return "Loan: "+this.loan_value+"; rate: "+this.rate+"; days active:"+daysActive+"; Type: "+account_Type+";";
+	@Override
+	public String toString() {
+		return "Loan: " + this.loan_value + "; rate: " + this.rate + "; days active:" + daysActive + "; Type: " + account_Type + ";";
 	}
 	
-	public void print() {
-		System.out.println("This is an account");
-	}
-
 	public static double calculate(AccountStage3[] accounts)
 	{
 		double totalFee=0.0;
