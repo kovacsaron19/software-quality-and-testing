@@ -36,9 +36,9 @@ public class AccountStage3 {
 	
 	public static double calculate(AccountStage3[] accounts)
 	{
-		double totalFee=0.0;
+		double totalFee = 0.0;
 		AccountStage3 account;
-		for	(int i=0;i<accounts.length;i++)	{
+		for	(int i = 0; i<accounts.length; i++)	{
 			account=accounts[i];
 			if(account.account_Type==AccountType.PREMIUM||account.account_Type==AccountType.SUPER_PREMIUM)	
 				totalFee+=BROKER_FEE	* (	//	1.25%	broker's	fee
