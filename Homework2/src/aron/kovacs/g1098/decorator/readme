@@ -1,0 +1,8 @@
+Authorization System using Machine Learning Technologies
+
+logins can be flagged by overriding the method that saves them to the database using a decorator
+
+pros:
+can be used at runtime
+
+cons:
