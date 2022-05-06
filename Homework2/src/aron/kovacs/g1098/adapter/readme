@@ -1,0 +1,10 @@
+Authorization System using Machine Learning Technologies
+
+We can store the two types of logins (text, voice) in the same data structure using the voice to text adapter without losing
+the extra attribute of voice logins
+
+pros:
+more flexibility 
+
+cons:
+there may be better solutions to solving this specific problem that are unknown to me at the moment
