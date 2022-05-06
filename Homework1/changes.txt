@@ -1,0 +1,13 @@
+Stage 1 - Resolved formatting issues, removed declared but unused variables, added static final values
+Stage 2 - AccountType enum: Implemented AccountType enum file, removed references to static implementation of account types
+Stage 3 - DRY: setValuereplaced if clause in constructor with existing set method
+Stage 3 - YAGNI: removed print method, changed to_string method to overridden toString, removed printing from get methods and renamed loan method to getLoan
+Stage 4 - SRP: Added AccountFeeStrategy for the broker fee and the calculation method of the account fee, removed it from the Account class.
+Added AccountsFeeCalculator for the static calculate method, it declares the previous AccountFeeStrategy to get the values and methods.
+Removed redundant account declaration in the calculate function.
+Stage 5 - Formatting: Changed snake case to camel case for fields and parameters
+Stage 6 - Open/closed principle: Added MonthlyRateCalculatable interface to ensure account class has a getMonthlyRate method
+Stage 7 - Streams, Exceptions, Main: Replaced for loop in calculator with streams
+Added exception for NegativeLoanValues
+Added validator for daysActive
+Added Main for testing - calculate function returns a value but due to the formula or the specific parameter values it returns 0

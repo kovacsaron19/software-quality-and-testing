@@ -1,0 +1,10 @@
+Authorization System using Machine Learning Technologies
+
+A singleton registry could solve the problem of having different backend applications
+for different authentication types, such as voice and text. Hash keys for registry in the form of ENUM.
+
+pros:
+ensures there are no two backend of the same type
+
+cons:
+merging authentication types (like authenticating using both text and voice) will require modifications

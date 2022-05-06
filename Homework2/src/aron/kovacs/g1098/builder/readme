@@ -1,0 +1,11 @@
+Authorization System using Machine Learning Technologies
+
+Login attempts can have several optional attributes based on a few criteria:
+if the login attempt was unsuccessful, there is no userName to attach to the object
+if there is no device name that can be determined we shouldn't add it to the login attempt
+
+advantages:
+more conditional control over attributes
+
+disadvantages:
+immutable

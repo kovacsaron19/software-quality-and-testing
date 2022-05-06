@@ -1,0 +1,7 @@
+Logging system 
+
+in order to manage the app logs define a module that will save all logs in a single/unique file
+there will be unique log files for errors and general info
+the files will be created and opened when the app starts (eager instantiation)
+the developers dont know the real filenames for the two logs
+all loggers will implement the ILogging interface
