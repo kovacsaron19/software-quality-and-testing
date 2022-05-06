@@ -1,0 +1,9 @@
+Authorization System using Machine Learning Technologies
+
+The deep learning model that calculates the predictions is higher in size (250+ MB).
+
+pros:
+we solve the problem of loading the model multiple times when declaring a predictor
+
+cons: 
+a singleton would solve even more potential problems
