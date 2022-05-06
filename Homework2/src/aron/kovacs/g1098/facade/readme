@@ -1,0 +1,10 @@
+Authorization System using Machine Learning Technologies
+
+Using the initilazer facade we can connect to our database and load our predictive model since these two entities need each other to function
+
+pros:
+simpler code
+can be extended
+
+cons:
+the methods in place do not need to return anything for now but the method's return type will need to change if we wish to add methods that return something
