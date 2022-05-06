@@ -1,0 +1,10 @@
+Authorization System using Machine Learning Technologies
+
+different types of users can be created using a simple factory without the main
+depending on any of the specific classes.
+
+pros:
+main is not exposed to any specific user class declarations
+
+cons:
+unlikely that user types will expand further than STANDARD and ADMIN
