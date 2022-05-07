@@ -1,6 +1,6 @@
 Authorization System using Machine Learning Technologies
 
-Using the initilazer facade we can connect to our database and load our predictive model since these two entities need each other to function
+Using the initializer facade we can connect to our database and load our predictive model since these two entities need each other to function
 
 pros:
 simpler code

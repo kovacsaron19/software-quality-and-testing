@@ -1,0 +1,9 @@
+Authorization System using Machine Learning Technologies
+
+Predictor models are loaded in the flyweight object thus circumventing the risk of declaring more than one instance of them
+
+pros:
+ensures better separation of predictors than prototype since they are instantiated in a static block
+
+cons: 
+a singleton would still offer more flexibility with the same degree of separation
