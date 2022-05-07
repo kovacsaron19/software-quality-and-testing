@@ -1,0 +1,10 @@
+Authorization System using Machine Learning Technologies
+
+The module used to login can be changed to flag all logins by using a flagged module proxy
+
+pros:
+can flag logins during execution
+
+cons:
+all logins using that module will be flagged regardless of login parameters which is not a great criterion for flagging logins,
+decorating simple logins would be much more appropriate
